@@ -1,0 +1,12 @@
+{
+  "name": "diagnostico_operativo_pyme",
+  "version": "1.0",
+  "model": "gemini-2.5-flash",
+  "parameters": {
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "max_output_tokens": 2048
+  },
+  "system_instruction_file": "system_instructions.md",
+  "user_prompt_template": "Analiza la siguiente situación operativa de la empresa {{empresa}} en el sector {{sector}}:\n\n{{descripcion_problema}}\n\nEntrega un informe estructurado con:\n1. Diagnóstico del problema raíz.\n2. Estimación de impacto y horas-hombre desperdiciadas.\n3. Solución recomendada con IA / automatización.\n4. Plan de implementación en 3 fases."
+}

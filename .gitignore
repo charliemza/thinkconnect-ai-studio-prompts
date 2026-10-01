@@ -1,0 +1,14 @@
+# Entorno y Secretos
+.env
+.env.local
+
+# Python y Virtualenvs
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# Antigravity y Workspace
+.antigravity/
+scratch/
+*.log
