@@ -1,0 +1,26 @@
+{
+  "name": "arca_wsfe_solicitar_cae",
+  "description": "Llamada a Web Service WSFE v1 de ARCA para autorizar comprobante electrónico y obtener CAE",
+  "parameters": {
+    "type": "OBJECT",
+    "properties": {
+      "punto_venta": {
+        "type": "INTEGER",
+        "description": "Número de punto de venta habilitado en ARCA (ej. 7)"
+      },
+      "tipo_comprobante": {
+        "type": "INTEGER",
+        "description": "Código de comprobante ARCA (1: Factura A, 6: Factura B, 11: Factura C)"
+      },
+      "cuit_cliente": {
+        "type": "STRING",
+        "description": "CUIT del receptor sin guiones"
+      },
+      "importe_total": {
+        "type": "NUMBER",
+        "description": "Importe total del comprobante con IVA incluido"
+      }
+    },
+    "required": ["punto_venta", "tipo_comprobante", "cuit_cliente", "importe_total"]
+  }
+}

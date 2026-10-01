@@ -1,0 +1,12 @@
+{
+  "prompt_name": "asistente_contable_arca",
+  "version": "1.0.0",
+  "description": "Plantilla oficial de prompt para consultas tributarias y doctrinarias ARCA/ATM en ThinkConnect",
+  "model_config": {
+    "model": "gemini-2.5-flash",
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "thinking_budget": 0
+  },
+  "user_prompt": "Actuando como especialista contable tributario argentino, analiza la situación del siguiente contribuyente ante ARCA:\n- CUIT: {{cuit}}\n- Condición: {{condicion_iva}}\n- Período: {{periodo}}\n- Consulta: {{consulta_usuario}}"
+}
